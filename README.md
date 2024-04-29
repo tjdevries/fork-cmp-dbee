@@ -63,7 +63,10 @@ leafs provides columns. This might change in the future.
     dependencies = {
       {
         "MattiasMTS/cmp-dbee",
-        ft = "sql", -- optional
+        dependencies = {
+          {"kndndrj/nvim-dbee"}
+        },
+        ft = "sql", -- optional but good to have
       },
     },
     opts = {
